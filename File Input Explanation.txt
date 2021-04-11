@@ -1,0 +1,26 @@
+output ac
+load data @line 5 into ac
+store ac into line 0
+output ac
+jump to line 6 (skip data)
+data
+subtract line 1 from ac
+output ac
+add line 1 to ac
+output ac
+	input
+output
+skip (next line) if ac < 000001000000
+halt (should get skipped if ac < 000001000000)
+output (this should get done if ac < 000001000000)
+	input
+jumpZero to line 19
+halt (should get skipped if ac = 0)
+halt (^^)
+	input
+shift left
+shift left
+shift right
+output
+store ac at line 26
+halt

@@ -1,0 +1,24 @@
+load line 17 into ac
+skip over the data held in line 2
+*data*
+output ac, should be 16
+sub line 2 from AC, store in ac 
+output ac, should be 8
+add line 2 to AC
+output AC, should be 16
+shift ac 1 bit left
+output, should be 32
+shit AC one bit right
+output, should be 16
+store ac(16) into line 1
+jump to line 18
+output-This line should be jumped over!
+output-This line should be jumped over!
+output-This line should be jumped over!
+*data*
+input from console **INPUT 0 TO TEST JZE**
+jump if 0, else next lines will NOT be ignored
+shift ac left by 1
+shift ac left by 1
+output - will be whatever the user put in for PUT, unless they didn't put 0, then it will be whatever they put shifted left by 2.
+HALT!
